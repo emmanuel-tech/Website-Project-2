@@ -1,0 +1,141 @@
+<!-- Emmanuel Bonsu -->
+<!-- Professor Mary Hackley -->
+<!-- ITEC231-400 -->
+<!-- ITEC231 HTML Term Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title> Open Eyes </title>
+	 <meta charset="utf-8">
+	 <link href="OE_css.css" rel="stylesheet" media="screen">
+	 <link href="OE_print.css" rel="stylesheet" media="print">
+	 <script src=
+	 "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	 </script>
+	 <script src=
+	 "http://ajax.googlea[is.com/ajax/jquery.validate/1.11.0/jquery.validate.js">
+	 </script>
+	 <script> 
+		 $(document).ready(function() {
+			 $('#more').click(function() {
+				 $('#newsletter').toggle();
+			 });
+		 });
+		 $(document).ready(function() {
+			 $('#more2').click(function() {
+				 $('#feedback').toggle();
+			 });
+		 });
+		 $(document).ready(function(){
+			 $('form').validate();
+		 });
+	 </script>
+	 <!--[if lt IE 9]>
+	 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	 </script>
+	 <![endif]-->
+</head>
+
+<body>
+	 <div id="wrapper">
+		 <header> <!-- header start -->
+			 <h1><a href="OE_home.html" style="color:#ffffff;text-decoration:none;"> 
+					// open eyes // 
+			 </a></h1>
+		 </header> <!-- header end-->
+		 
+		 <nav> <!-- nav start-->
+			 <ul>
+				 <li><a href="OE_about&contact.html">ABOUT</a></li> &nbsp;
+				 <li><a href="OE_cameras.html">CAMERAS</a></li> &nbsp;
+				 <li><a href="OE_lenses.html">LENSES</a></li> &nbsp;
+				 <li><a href="OE_accessories.html"> ACCESSORIES </a></li> &nbsp;
+				 <li><a href="OE_form.html"> MATCHMAKER! </a></li> &nbsp;
+			 </ul>
+		 </nav> <!-- nav end-->
+		 
+		 <div id="flexproperty"> <!-- flexproperty start-->
+		 
+			 <!-- left column, column 1-->
+			 <div class="column-left"> 
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Want to find about the latest updates and deals?? <br>
+							  Join the OE newsletter by clicking <a href="#" id="more">here</a>!
+							  </legend><br>
+						 <div id="newsletter">
+							 <label for="userFirstName"> First Name: </label>
+								 <input type="text" name="First Name" required="required" placeholder="your first name here"><br>
+							 <label for="userLastName"> Last Name: </label>
+								 <input type="text" name="Last Name" required="required" placeholder="your last name here"><br>
+							 <label for="myEmail">E-mail:</label>
+								 <input type="email" name="Email" required="required" placeholder="you@emaildomain.com"><br>
+							 <input type="submit" value="Sign Up" id="submit">
+						</div> 
+				 </form>
+			 </div> <!-- column 1 end -->
+			 
+			 <!-- center column, column 2-->
+			 <main>
+				 <h2 style="text-align:center;"> WELCOME! </h2>
+				 <p> We're glad to see you. If this is your first time or your 500th time, 
+				     let us be of assistance to you. Open Eyes wants to help direct you inherit
+					 your next photo/film related purchase. Feel free to navigate around! 
+					 (We suggest starting with our About page and moving from there.)
+				 </p>
+				 
+				 <br><br>
+				 <hr>
+				 <div id="sitemap">
+					 <p> Finished Reading? Need to go somewhere else? Follow the links! </p>
+					 <ul>
+						 <li><a href="OE_home.html"> HOME </a></li>
+						 <ul>
+							 <li><a href="OE_about&contact.html">ABOUT</a></li>
+							 <li><a href="OE_cameras.html">CAMERAS</a></li>
+							 <li><a href="OE_lenses.html">LENSES</a></li>
+							 <li><a href="OE_accessories.html"> ACCESSORIES </a></li>
+							 <li><a href="OE_form.html"> MATCHMAKER! </a></li>
+						 </ul>
+					 </ul>
+				 </div>
+			 </main> <!-- column 2 end-->
+			 
+			 <!-- right column, column 3-->
+			 <div class="column-right">
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Tell us how we're doing. We'd love to hear your <a href="#" id="more2">feedback</a>.</legend><br>
+					 <div id="feedback">
+						 <label for="userName"> Name: </label>
+							 <input type="text" name="User Name" required="required" placeholder="your name here">
+							 <br><br>
+						 <legend> Which level of photography expertise would you classify yourself as: </legend>
+						 <select size="1" name="levels" id="levels">
+							 <option value="Beginner"> Beginner </value>
+							 <option value="Intermediate"> Intermediate </value>
+							 <option value="Advanced/Professional"> Advanced/Professional </value>
+							 <option value="Hobbyist"> Hobbyist </value>
+						 </select>
+						 <br><br>
+						 <!-- Comment Box -->
+						 <label for="comments"><legend> Enter your feedback below: </legend></label>
+						 <textarea name="comments" id="comments" rows="3" cols="20"></textarea><br><br>
+						 <input id="mySubmit" type="submit" value="Submit">
+						 <input type="reset">
+						 <br><br>
+					 </div>
+				 </form>
+			 </div> <!-- column 3 end -->
+			 
+		 </div> <!-- flexproperty end -->
+		 
+		 <footer>
+			 <small><i>
+				 Copyright &copy; 2017 Open Eyes Consulting Photo Agency
+			 </i></small>
+		 </footer>
+
+	 </div> <!-- end of wrapper-->
+
+</body> <!-- end of body -->
+</html> <!-- end of html page -->

@@ -1,0 +1,232 @@
+<!-- Emmanuel Bonsu -->
+<!-- Professor Mary Hackley -->
+<!-- ITEC231-400 -->
+<!-- ITEC231 HTML Term Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title> Open Eyes </title>
+	 <meta charset="utf-8">
+	 <link href="OE_css.css" rel="stylesheet" media="screen">
+	 <link href="OE_print.css" rel="stylesheet" media="print">
+	 <script src=
+	 "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	 </script>
+	 <script src=
+	 "http://ajax.googlea[is.com/ajax/jquery.validate/1.11.0/jquery.validate.js">
+	 </script>
+	 <script> 
+		 $(document).ready(function() {
+			 $('#more').click(function() {
+				 $('#newsletter').toggle();
+			 });
+		 });
+		 $(document).ready(function() {
+			 $('#more2').click(function() {
+				 $('#feedback').toggle();
+			 });
+		 });
+		 $(document).ready(function(){
+			 $('form').validate();
+		 });
+	 </script>
+	 <!--[if lt IE 9]>
+	 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	 </script>
+	 <![endif]-->
+</head>
+
+<body>
+	 <div id="wrapper">
+		 <header> <!-- header start -->
+			 <h1><a href="OE_home.html" style="color:#ffffff;text-decoration:none;"> 
+					// open eyes // 
+			 </a></h1>
+		 </header> <!-- header end-->
+		 
+		 <nav> <!-- nav start-->
+			 <ul>
+				 <li><a href="OE_about&contact.html">ABOUT</a></li> &nbsp;
+				 <li><a href="OE_cameras.html">CAMERAS</a></li> &nbsp;
+				 <li><a href="OE_lenses.html">LENSES</a></li> &nbsp;
+				 <li><a href="OE_accessories.html"> ACCESSORIES </a></li> &nbsp;
+				 <li><a href="OE_form.html"> MATCHMAKER! </a></li> &nbsp;
+			 </ul>
+		 </nav> <!-- nav end-->
+		 
+		 <div id="flexproperty"> <!-- flexproperty start-->
+		 
+			 <!-- left column, column 1-->
+			 <div class="column-left"> 
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Want to find about the latest updates and deals?? <br>
+							  Join the OE newsletter by clicking <a href="#" id="more">here</a>!
+							  </legend><br>
+						 <div id="newsletter">
+							 <label for="userFirstName"> First Name: </label>
+								 <input type="text" name="First Name" required="required" placeholder="your first name here"><br>
+							 <label for="userLastName"> Last Name: </label>
+								 <input type="text" name="Last Name" required="required" placeholder="your last name here"><br>
+							 <label for="myEmail">E-mail:</label>
+								 <input type="email" name="Email" required="required" placeholder="you@emaildomain.com"><br>
+							 <input type="submit" value="Sign Up" id="submit">
+						</div> 
+				 </form>
+			 </div> <!-- column 1 end -->
+			 
+			 <!-- center column, column 2-->
+			 <main>
+				 <h2> Codename: LENSES</h2>
+				 <p> Purchasing the right camera is important, but lenses are arguably the most 
+					 essential part to any camera rig. Lenses are a heavy factor in determining 
+					 the quality and usability of footage captured by a camera. We will discuss 
+					 the differences, advanatages, and disadvantages of the following lenses:</p>
+				 <ul>
+					 <li>Zoom lenses</li>
+					 <li>Prime lenses</li>
+					 <li>Standard lenses</li>
+					 <li>Macro lenses</li>
+					 <li>Telephoto lenses</li>
+					 <li>Fisheye lenses</li>
+					 <li>Wide angle lenses</li>
+				 </ul>
+				 
+				 <h3> Zoom Lenses </h3>
+				 <p> A zoom lens is a lens that can cover a variety of focal lengths within 
+					 its specified range. For instance, a 24-70mm zoom lens means that with 
+					 that lens, you can zoom in and out to any focal length between 24mm and 
+					 70mm. This allows a camera to capture imagery in nearby surroundings 
+					 and have the capability to zoom in into subjects or scenes that are 
+					 further away, all without changing the position of the camera or moving 
+					 one’s body around! Since a zoom lens covers multiple focal lengths, it 
+					 could be a substitute for several prime lenses; it can be considered 
+					 to have the focal capabilities of several prime lenses into one lens. 
+					 Sometimes the downside to zoom lenses are they tend to be rather bulkier 
+					 than prime lenses, as well as more expensive since they cover multiple 
+					 focal lengths. Zoom lenses can also sometimes produce lesser quality 
+					 imagery than prime lenses, since most prime lenses have higher lower 
+					 aperture numbers (which means it can take in more light = better quality 
+					 imagery) and they are specially made to do outstanding work in their 
+					 specified focal length. 
+				 </p>
+				 <h3> Prime Lenses </h3>
+				 <p> Prime lenses are also known as fixed-length lenses, referring to the 
+				 fact prime lenses can only operate from the single focal length they were 
+				 designed for; i.e. a 35mm lens can only work at 35mm, lacking the ability 
+				 to zoom in or zoom out. Prime lenses are known to produce sharper quality 
+				 images since they are designed to cater to their specified focal length. 
+				 Prime lenses typically also have wider apertures, allowing more light into 
+				 the camera, becoming very useful in low-light situations. Where prime lenses 
+				 lack is in their inability to zoom, meaning that the camera would have to 
+				 physically be moved to capture a scene/subject from a different distance 
+				 field of view. They are typically also more lightweight and space-efficient
+				 than zoom lenses.
+				 </p>
+				 <h3> Wide Angle Lenses </h3>
+				 <p> Wide angle lenses are the grouping of lenses with shorter focal ranges; 
+					 typical wide angle lens are between 24mm-35mm, and ultra wide angle lenses have 
+					 typical focal lengths between 8mm-24mm. These lenses are used to capture a wider 
+					 scene or subject, being especially useful in capturing imagery such as landscapes, 
+					 areas with limited spacing, and buildings.  
+				 </p>
+				 <h3> Standard Lenses </h3>
+				 <p> A standard lens refers to a grouping of lenses that are reminiscent of 
+					 the natural field of view from the human eye, so they typically have a 
+					 mid-range focal length, most often between 35mm-85mm. Standard lenses 
+					 are typically prime lenses, which denotes they have usually wider apertures, 
+					 produce better quality imagery, and perform exceptionally in low-light 
+					 conditions. Standard lenses are most often used for portraits, pictures 
+					 that flatter the face of a person or persons. 
+				 </p>
+				 <h3> Telephoto Lenses </h3>
+				 <p> Telephoto lenses are the grouping of lenses geared towards long distance 
+					 photography; short distance telephoto lens are typically around the 
+					 85mm-125mm focal lengths, mid-distance telephoto lens typically range 
+					 between 135mm-300mm, and super telephoto lenses typically range 300mm and 
+					 up. Telephoto lenses help in cases where your subject/scene can’t be 
+					 approached up close so it requires a lens that can zoom into the scene 
+					 without physically entering the scene.  
+				 </p>
+				 <h3> Macro Lenses </h3>
+				 <p> Macro lens are the grouping of lenses specifically engineered for close-up 
+					 photography. These lenses are ideal for product photography and promotions, as 
+					 well as any form of photography that requires a lens to be pay attention to fine 
+					 details. They require a photographer to get close to the subject at hand to 
+					 produce the best imagery. 
+				 </p>
+				 <h3> Fisheye Lenses </h3>
+				 <p> Fisheye lenses can be considered a special form of wide angle lens that has 
+					 a rounded field of vision, typically around 180 degrees. The image created 
+					 looks completely distorted since it has a 180 degree field of view, and is 
+					 considered more so for creative filming rather than more serious subjects of 
+					 film. Due to the fact it creates a sort of fishbowl effect, its mostly used 
+					 when a peculiar perspective is required for a scene/subject. 
+				 </p>
+				 
+				 <h4> For audio/visual learners, here's a video by Peter McKinnon explaining lenses: </h4>
+				 <figure>
+					 <map id="videolenses" name="videolenses">
+						 <area href="https://youtu.be/hnMY1u7M90o"  shape="rect" coords="0,0,1920,1080" alt="Peter McKinnon on Lenses" title="Peter McKinnon on Lenses" target="_blank">
+					 </map>
+					 <img src="peter_mckinnon_lenses_video.png" usemap="#videolenses" alt="Peter McKinnon Video Thumbnail" height="270" width="480" style="margin:0px auto;display:block">
+					 <figcaption>
+						 Image source: <a href="https://youtu.be/hnMY1u7M90o" style="text-decoration:none;">Youtube</a> by Peter McKinnon
+					 </figcaption>
+				 </figure>
+				 
+				 <br><br>
+				 <hr>
+				 <div id="sitemap">
+					 <p> Finished Reading? Need to go somewhere else? Follow the links! </p>
+					 <ul>
+						 <li><a href="OE_home.html"> HOME </a></li>
+						 <ul>
+							 <li><a href="OE_about&contact.html">ABOUT</a></li>
+							 <li><a href="OE_cameras.html">CAMERAS</a></li>
+							 <li><a href="OE_lenses.html">LENSES</a></li>
+							 <li><a href="OE_accessories.html"> ACCESSORIES </a></li>
+							 <li><a href="OE_form.html"> MATCHMAKER! </a></li>
+						 </ul>
+					 </ul>
+				 </div>
+			 </main> <!-- column 2 end-->
+			 
+			 <!-- right column, column 3-->
+			 <div class="column-right">
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Tell us how we're doing. We'd love to hear your <a href="#" id="more2">feedback</a>.</legend><br>
+					 <div id="feedback">
+						 <label for="userName"> Name: </label>
+							 <input type="text" name="User Name" required="required" placeholder="your name here">
+							 <br><br>
+						 <legend> Which level of photography expertise would you classify yourself as: </legend>
+						 <select size="1" name="levels" id="levels">
+							 <option value="Beginner"> Beginner </value>
+							 <option value="Intermediate"> Intermediate </value>
+							 <option value="Advanced/Professional"> Advanced/Professional </value>
+							 <option value="Hobbyist"> Hobbyist </value>
+						 </select>
+						 <br><br>
+						 <!-- Comment Box -->
+						 <label for="comments"><legend> Enter your feedback below: </legend></label>
+						 <textarea name="comments" id="comments" rows="3" cols="20"></textarea><br><br>
+						 <input id="mySubmit" type="submit" value="Submit">
+						 <input type="reset">
+						 <br><br>
+					 </div>
+				 </form>
+			 </div> <!-- column 3 end -->
+			 
+		 </div> <!-- flexproperty end -->
+		 
+		 <footer>
+			 <small><i>
+				 Copyright &copy; 2017 Open Eyes Consulting Photo Agency
+			 </i></small>
+		 </footer>
+
+	 </div> <!-- end of wrapper-->
+
+</body> <!-- end of body -->
+</html> <!-- end of html page -->

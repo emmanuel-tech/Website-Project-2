@@ -1,0 +1,204 @@
+<!-- Emmanuel Bonsu -->
+<!-- Professor Mary Hackley -->
+<!-- ITEC231-400 -->
+<!-- ITEC231 HTML Term Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title> Open Eyes </title>
+	 <meta charset="utf-8">
+	 <link href="OE_css.css" rel="stylesheet" media="screen">
+	 <link href="OE_print.css" rel="stylesheet" media="print">
+	 <script src=
+	 "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	 </script>
+	 <script src=
+	 "http://ajax.googlea[is.com/ajax/jquery.validate/1.11.0/jquery.validate.js">
+	 </script>
+	 <script> 
+		 $(document).ready(function() {
+			 $('#more').click(function() {
+				 $('#newsletter').toggle();
+			 });
+		 });
+		 $(document).ready(function() {
+			 $('#more2').click(function() {
+				 $('#feedback').toggle();
+			 });
+		 });
+		 $(document).ready(function(){
+			 $('form').validate();
+		 });
+	 </script>
+	 <!--[if lt IE 9]>
+	 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	 </script>
+	 <![endif]-->
+</head>
+
+<body>
+	 <div id="wrapper">
+		 <header> <!-- header start -->
+			 <h1><a href="OE_home.html" style="color:#ffffff;text-decoration:none;"> 
+					// open eyes // 
+			 </a></h1>
+		 </header> <!-- header end-->
+		 
+		 <nav> <!-- nav start-->
+			 <ul>
+				 <li><a href="OE_about&contact.html">ABOUT</a></li> &nbsp;
+				 <li><a href="OE_cameras.html">CAMERAS</a></li> &nbsp;
+				 <li><a href="OE_lenses.html">LENSES</a></li> &nbsp;
+				 <li><a href="OE_accessories.html"> ACCESSORIES </a></li> &nbsp;
+				 <li><a href="OE_form.html"> MATCHMAKER! </a></li> &nbsp;
+			 </ul>
+		 </nav> <!-- nav end-->
+		 
+		 <div id="flexproperty"> <!-- flexproperty start-->
+		 
+			 <!-- left column, column 1-->
+			 <div class="column-left"> 
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Want to find about the latest updates and deals?? <br>
+							  Join the OE newsletter by clicking <a href="#" id="more">here</a>!
+							  </legend><br>
+						 <div id="newsletter">
+							 <label for="userFirstName"> First Name: </label>
+								 <input type="text" name="First Name" required="required" placeholder="your first name here"><br>
+							 <label for="userLastName"> Last Name: </label>
+								 <input type="text" name="Last Name" required="required" placeholder="your last name here"><br>
+							 <label for="myEmail">E-mail:</label>
+								 <input type="email" name="Email" required="required" placeholder="you@emaildomain.com"><br>
+							 <input type="submit" value="Sign Up" id="submit">
+						</div> 
+				 </form>
+			 </div> <!-- column 1 end -->
+			 
+			 <!-- center column, column 2-->
+			 <main>
+				 <h2> Codename: ACCESSORIES</h2>
+				 <p> Photography and filmmaking incorporates an amplitude of equipment 
+					 to capture the best possible images under any type of circumstance 
+					 or scenario. This page will describe varying tools, accessories, 
+					 and rigs one might need in order to have successful shoots. The 
+					 tools include: 
+				 </p>
+				 <ul>
+					 <li>Spare batteries</li>
+					 <li>Memory cards</li>
+					 <li>Tripod/monopod</li>
+					 <li>Slider</li>
+					 <li>Battery Packs</li>
+					 <li>Camera body cages</li>
+					 <li>Carrying methods</li>
+				 </ul>
+				 
+				 <h3>Spare batteries</h3>
+				 <p> All, if not most, cameras come packaged with one battery for use. 
+					 Typically shoots can run anywhere from a few minutes to hours to full 
+					 days at a time. Having batteries ensures that footage can continuously 
+					 be captured even when the active battery in the camera depletes of energy. 
+				 </p>
+				 <h3>Memory cards</h3>
+				 <p> Memory cards are the storage hardware of all photos and videos taken 
+					 by a camera. Memory cards range from storying a few GBs of media to large 
+					 amounts of media. Having spare memory cards allows the continuous storing 
+					 of necessary media.
+				 </p>
+				 <h3>Tripod/monopod</h3>
+				 <p> Tripod and monopods are stands that can hold cameras in varying locations. 
+					 A camera is mounted on a tripod or monopod, holds the camera, and responds 
+					 to the desires of the camera operator. 
+				 </p>
+				 <h3>Slider</h3>
+				 <p> A slider allows smooth side to side or front to back movement depending on 
+					 how the camera is mounted, permitting a camera to capture a scene dynamically. 
+					 Sliders can be placed on the ground or mounted on tripods, allowing for 
+					 elevation in footage.
+				 </p>
+				 <h3>Battery Packs</h3>
+				 <p> Battery packs charge batteries, some charging one battery at a time versus 
+					 others charging multiple batteries simultaneously. 
+				 </p>
+				 <h3>Camera body cages</h3>
+				 <p> Camera body cages are metal frames form-fitted for the respective camera 
+					 they are meant to fit. Cage bodies have multiple threads, holes, and inserts 
+					 that allow accessories to be attached to the frame, essentially allowing 
+					 accessories to attach to the camera. Some attachable accessories include 
+					 microphones and monitors.
+				 </p>
+				 <h3>Carrying methods</h3>
+				 <p> Cameras are delicate pieces of tech that cost more than average electronics, 
+					 making it essential to use equipment that can carry cameras and accessories 
+					 with full assurance of safety. There are many carrying options for a variety 
+					 of camera usages, including over-the-shoulder bags, backpacks, and hard shell 
+					 cases.
+				 </p>
+				 
+				 <h4> For my audio/visual learners, here's a video by Chase Jarvis explaining more about equipment and organization: </h4>
+				 <figure>
+					 <map id="videoaccessories" name="videoaccessories">
+						 <area href="https://www.youtube.com/watch?v=_pLV2wzainM"  shape="rect" coords="0,0,1920,1080" alt="Chase Jarvis on Camera Equipment" title="Jared Polin on Camera Differences" target="_blank">
+					 </map>
+					 <img src="chase_jarvis_accessories_video.png" usemap="#videoaccessories" alt="Chase Jarvis Thumbnail" height="270" width="480" style="margin:0px auto;display:block">
+					 <figcaption>
+						 Image source: <a href="https://www.youtube.com/watch?v=_pLV2wzainM" style="text-decoration:none;">YouTube</a> by Chase Jarvis
+					 </figcaption>
+				 </figure>
+				 
+				 <br><br>
+				 <hr>
+				 <div id="sitemap">
+					 <p> Finished Reading? Need to go somewhere else? Follow the links! </p>
+					 <ul>
+						 <li><a href="OE_home.html"> HOME </a></li>
+						 <ul>
+							 <li><a href="OE_about&contact.html">ABOUT</a></li>
+							 <li><a href="OE_cameras.html">CAMERAS</a></li>
+							 <li><a href="OE_lenses.html">LENSES</a></li>
+							 <li><a href="OE_accessories.html"> ACCESSORIES </a></li>
+							 <li><a href="OE_form.html"> MATCHMAKER! </a></li>
+						 </ul>
+					 </ul>
+				 </div>
+			 </main> <!-- column 2 end-->
+			 
+			 <!-- right column, column 3-->
+			 <div class="column-right">
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Tell us how we're doing. We'd love to hear your <a href="#" id="more2">feedback</a>.</legend><br>
+					 <div id="feedback">
+						 <label for="userName"> Name: </label>
+							 <input type="text" name="User Name" required="required" placeholder="your name here">
+							 <br><br>
+						 <legend> Which level of photography expertise would you classify yourself as: </legend>
+						 <select size="1" name="levels" id="levels">
+							 <option value="Beginner"> Beginner </value>
+							 <option value="Intermediate"> Intermediate </value>
+							 <option value="Advanced/Professional"> Advanced/Professional </value>
+							 <option value="Hobbyist"> Hobbyist </value>
+						 </select>
+						 <br><br>
+						 <!-- Comment Box -->
+						 <label for="comments"><legend> Enter your feedback below: </legend></label>
+						 <textarea name="comments" id="comments" rows="3" cols="20"></textarea><br><br>
+						 <input id="mySubmit" type="submit" value="Submit">
+						 <input type="reset">
+						 <br><br>
+					 </div>
+				 </form>
+			 </div> <!-- column 3 end -->
+			 
+		 </div> <!-- flexproperty end -->
+		 
+		 <footer>
+			 <small><i>
+				 Copyright &copy; 2017 Open Eyes Consulting Photo Agency
+			 </i></small>
+		 </footer>
+
+	 </div> <!-- end of wrapper-->
+
+</body> <!-- end of body -->
+</html> <!-- end of html page -->

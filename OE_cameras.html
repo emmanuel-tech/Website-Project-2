@@ -1,0 +1,184 @@
+<!-- Emmanuel Bonsu -->
+<!-- Professor Mary Hackley -->
+<!-- ITEC231-400 -->
+<!-- ITEC231 HTML Term Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title> Open Eyes </title>
+	 <meta charset="utf-8">
+	 <link href="OE_css.css" rel="stylesheet" media="screen">
+	 <link href="OE_print.css" rel="stylesheet" media="print">
+	 <script src=
+	 "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	 </script>
+	 <script src=
+	 "http://ajax.googlea[is.com/ajax/jquery.validate/1.11.0/jquery.validate.js">
+	 </script>
+	 <script> 
+		 $(document).ready(function() {
+			 $('#more').click(function() {
+				 $('#newsletter').toggle();
+			 });
+		 });
+		 $(document).ready(function() {
+			 $('#more2').click(function() {
+				 $('#feedback').toggle();
+			 });
+		 });
+		 $(document).ready(function(){
+			 $('form').validate();
+		 });
+	 </script>
+	 <!--[if lt IE 9]>
+	 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	 </script>
+	 <![endif]-->
+</head>
+
+<body>
+	 <div id="wrapper">
+		 <header> <!-- header start -->
+			 <h1><a href="OE_home.html" style="color:#ffffff;text-decoration:none;"> 
+					// open eyes // 
+			 </a></h1>
+		 </header> <!-- header end-->
+		 
+		 <nav> <!-- nav start-->
+			 <ul>
+				 <li><a href="OE_about&contact.html">ABOUT</a></li> &nbsp;
+				 <li><a href="OE_cameras.html">CAMERAS</a></li> &nbsp;
+				 <li><a href="OE_lenses.html">LENSES</a></li> &nbsp;
+				 <li><a href="OE_accessories.html"> ACCESSORIES </a></li> &nbsp;
+				 <li><a href="OE_form.html"> MATCHMAKER! </a></li> &nbsp;
+			 </ul>
+		 </nav> <!-- nav end-->
+		 
+		 <div id="flexproperty"> <!-- flexproperty start-->
+		 
+			 <!-- left column, column 1-->
+			 <div class="column-left"> 
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Want to find about the latest updates and deals?? <br>
+							  Join the OE newsletter by clicking <a href="#" id="more">here</a>!
+							  </legend><br>
+						 <div id="newsletter">
+							 <label for="userFirstName"> First Name: </label>
+								 <input type="text" name="First Name" required="required" placeholder="your first name here"><br>
+							 <label for="userLastName"> Last Name: </label>
+								 <input type="text" name="Last Name" required="required" placeholder="your last name here"><br>
+							 <label for="myEmail">E-mail:</label>
+								 <input type="email" name="Email" required="required" placeholder="you@emaildomain.com"><br>
+							 <input type="submit" value="Sign Up" id="submit">
+						</div> 
+				 </form>
+			 </div> <!-- column 1 end -->
+			 
+			 <!-- center column, column 2-->
+			 <main>
+				 <h2> Codename: CAMERA BODY</h2>
+				 <p> There are varying companies offering different camera options 
+					 for the general public. When it comes to figuring out what camera to 
+					 buy, its best to know what types of cameras are available, and then 
+					 narrow down what attributes and capabilities are most important to 
+					 a consumer in order to differentiate on which brand to get. Let's 
+					 begin by simply understanding the different types of cameras. 
+				 </p>
+				 <ul>
+					 <li>DSLR cameras and mirrorless cameras</li>
+					 <li>Full Frame Sensors and ASP-C Sensors (Cropped Sensors)</li>
+				 </ul>
+				 
+				 <h3> DSLR Cameras and Mirrorless Cameras </h3>
+				 <p> In the simplest terms, a DSLR camera incorporates a mirror in front of the 
+					 camera sensor, and utilizes an optical viewfinder. A mirrorless camera has 
+					 an exposed sensor (the sensor can be seen when the camera lens is removed), 
+					 and since there is no mirror, no viewfinder is required within the camera. 
+					 Due to a lesser amount of components, mirrorless cameras are typically more 
+					 lightweight than DSLR cameras, as well as more compact.
+				 </p>
+
+				 <h3> Full Frame Sensors and ASP-C Sensors (Cropped Sensors) </h3>
+				 <p> To place this in simplest terms, imagine a camera having a piece of 
+					 technology called a sensor that captures an image. Older camera models had 
+					 sensors measuring 35mm in size, which is a measure that persists till today. 
+					 Cameras classified as full-frame cameras specify that that camera wields a 
+					 35mm sensor camera. An APS-C camera (otherwise known as a cropped sensor camera) 
+					 wield a smaller sensor than a full frame sensor. To compare the image captured 
+					 by full frame cameras versus APS-C cameras, imagine this. If you have a 500 by 
+					 1000 unit scene, a full frame may capture the entire scene, the full 500 by 1000 
+					 units. An APS-C sensor camera would capture a small portion of that 500 by 1000 
+					 unit scene; so while the full frame camera can capture 500 by 1000 units of the 
+					 scene, an APS-C may capture a view of the scene measurable to 300 by 600 units. 
+					 Full frame cameras tend to be more expensive, higher in quality, and used for 
+					 professional purposes. APS-C cameras provide adequate quality, are more 
+					 affordable than full frame cameras, and are used for multiple purposes. 
+				 </p>
+				 
+				 <h4> For audio/visual learners, here's a video by Jared Polin explaining  different types of cameras: </h4>
+				 <figure>
+					 <map id="videocambod" name="videocambod">
+						 <area href="https://www.youtube.com/watch?v=7oNd6U-qry0"  shape="rect" coords="0,0,1920,1080" alt="Jared Polin on Camera Differences" title="Jared Polin on Camera Differences" target="_blank">
+					 </map>
+					 <img src="jared_polin_camera_body_video.png" usemap="#videocambod" alt="Jared Polin Video Thumbnail" height="270" width="480" style="margin:0px auto;display:block">
+					 <figcaption>
+						 Image source: <a href="https://www.youtube.com/watch?v=7oNd6U-qry0" style="text-decoration:none;">Youtube</a> by Jared Polin
+					 </figcaption>
+				 </figure>
+				 
+				 <br><br>
+				 <hr>
+				 <div id="sitemap">
+					 <p> Finished Reading? Need to go somewhere else? Follow the links! </p>
+					 <ul>
+						 <li><a href="OE_home.html"> HOME </a></li>
+						 <ul>
+							 <li><a href="OE_about&contact.html">ABOUT</a></li>
+							 <li><a href="OE_cameras.html">CAMERAS</a></li>
+							 <li><a href="OE_lenses.html">LENSES</a></li>
+							 <li><a href="OE_accessories.html"> ACCESSORIES </a></li>
+							 <li><a href="OE_form.html"> MATCHMAKER! </a></li>
+						 </ul>
+					 </ul>
+				 </div>
+			 </main> <!-- column 2 end-->
+			 
+			 <!-- right column, column 3-->
+			 <div class="column-right">
+				 <form method="post" id="newsForm" action="http://webdevbasics.net/scripts/demo.php">
+					 <legend> Tell us how we're doing. We'd love to hear your <a href="#" id="more2">feedback</a>.</legend><br>
+					 <div id="feedback">
+						 <label for="userName"> Name: </label>
+							 <input type="text" name="User Name" required="required" placeholder="your name here">
+							 <br><br>
+						 <legend> Which level of photography expertise would you classify yourself as: </legend>
+						 <select size="1" name="levels" id="levels">
+							 <option value="Beginner"> Beginner </value>
+							 <option value="Intermediate"> Intermediate </value>
+							 <option value="Advanced/Professional"> Advanced/Professional </value>
+							 <option value="Hobbyist"> Hobbyist </value>
+						 </select>
+						 <br><br>
+						 <!-- Comment Box -->
+						 <label for="comments"><legend> Enter your feedback below: </legend></label>
+						 <textarea name="comments" id="comments" rows="3" cols="20"></textarea><br><br>
+						 <input id="mySubmit" type="submit" value="Submit">
+						 <input type="reset">
+						 <br><br>
+					 </div>
+				 </form>
+			 </div> <!-- column 3 end -->
+			 
+		 </div> <!-- flexproperty end -->
+		 
+		 <footer>
+			 <small><i>
+				 Copyright &copy; 2017 Open Eyes Consulting Photo Agency
+			 </i></small>
+		 </footer>
+
+	 </div> <!-- end of wrapper-->
+
+</body> <!-- end of body -->
+</html> <!-- end of html page -->
